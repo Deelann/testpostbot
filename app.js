@@ -22,7 +22,7 @@ fs.readdir("files", (error, files) => {
     pushPost(`files/${msg[0]}`);
   });
 
-  console.log("Обработка файлов завершена...");
+  console.log("Обработка файлов завершена....");
 });
 
 const token = "6516029694:AAFcm3HRJn9qWza93THo3jfnNoiF4aNAtZQ";
