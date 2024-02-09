@@ -1,0 +1,9 @@
+{
+  "cron": "30 * * * *",
+  "filePath": "files",
+  "mode": 0,
+  "telegram": {
+    "token": "6516029694:AAFcm3HRJn9qWza93THo3jfnNoiF4aNAtZQ",
+    "chatId": "-1001693693655"
+  }
+}
