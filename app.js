@@ -85,14 +85,19 @@ const pushImages = (images, msg) => {
 
     let index = 0;
 
+    console.log(images.sort((a, b) => a.localeCompare(b)));
+    return;
+
     images
       .sort((a, b) => a.localeCompare(b))
       .forEach((image) => {
+        const caption = index === 0 ? data.toString() : null;
         const url = getFilePath(image);
         bot.telegram.sendPhoto(chatId, Input.fromLocalFile(url), {
-          caption: index === 0 ? data.toString() : ""
+          caption: caption,
         });
         index++;
+        setTimeout(() => {}, 5000);
       });
   });
 };
